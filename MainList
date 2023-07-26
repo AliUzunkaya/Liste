@@ -1,0 +1,19 @@
+public class MainList {
+    public static void main(String[] args) {
+        MyList<Integer> myList = new MyList<>();
+        myList.add(10);
+        myList.add(20);
+        myList.add(30);
+        System.out.println(myList); // Output: [10, 20, 30]
+        System.out.println(myList.get(1)); // Output: 20
+        myList.remove(0);
+        System.out.println(myList); // Output: [20, 30]
+        myList.set(0, 40);
+        System.out.println(myList); // Output: [40, 30]
+        System.out.println(myList.indexOf(30)); // Output: 1
+        System.out.println(myList.isEmpty()); // Output: false
+        myList.clear();
+        System.out.println(myList); // Output: []
+        System.out.println(myList.isEmpty()); // Output: true
+    }
+}
